@@ -1,0 +1,5 @@
+LineID;LineText;SortingHelp;Realtime;MeansOfTransport
+301;U1;1;1;ptMetro
+304;U4;4;1;ptMetro
+162;62;162;1;ptTram
+950;N71;950;0;ptBusNight

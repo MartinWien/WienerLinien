@@ -1,0 +1,55 @@
+{
+  "data": {
+    "monitors": [
+      {
+        "locationStop": {
+          "type": "Feature",
+          "properties": {
+            "name": "60200657",
+            "title": "Karlsplatz",
+            "attributes": { "rbl": 4109 }
+          }
+        },
+        "lines": [
+          {
+            "name": "U1",
+            "towards": "Leopoldau",
+            "direction": "H",
+            "barrierFree": true,
+            "departures": {
+              "departure": [
+                {
+                  "departureTime": {
+                    "timePlanned": "2026-07-11T23:12:00.000+0200",
+                    "timeReal": "2026-07-11T23:12:45.000+0200",
+                    "countdown": 1
+                  }
+                },
+                {
+                  "departureTime": {
+                    "timePlanned": "not-a-timestamp",
+                    "countdown": "also-broken"
+                  }
+                }
+              ]
+            },
+            "type": "ptMetro"
+          }
+        ]
+      },
+      {
+        "locationStop": { "unexpected": "shape, no properties" },
+        "lines": []
+      },
+      "this entry is not even an object"
+    ],
+    "trafficInfos": [
+      {
+        "name": "stoerunglang",
+        "description": "entry without the mandatory title field",
+        "relatedLines": ["U4"]
+      }
+    ]
+  },
+  "message": { "value": "OK", "messageCode": 1 }
+}

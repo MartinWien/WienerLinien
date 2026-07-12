@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env
+
+# Runtime data: downloaded registry CSVs and the local SQLite database.
+# Sample fixtures used by tests live in tests/fixtures/ and ARE tracked.
+data/*.csv
+data/*.db
+data/*.db-journal
+
+# IDE
+.idea/
+.vscode/

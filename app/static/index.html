@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>wl-pulse — Live-Abfahrten Wien</title>
+  <meta name="description" content="Live-Abfahrten, Verspätungen und Störungen der Wiener Öffis. Datenquelle: Stadt Wien / Wiener Linien (CC BY 4.0).">
+  <link rel="stylesheet" href="/static/styles.css?v=2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23e30613'/%3E%3Ctext x='8' y='11.5' font-size='9' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EU%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <h1>wl-pulse</h1>
+      <span class="tagline">Live-Abfahrten Wien</span>
+    </div>
+    <nav><a href="/docs" class="docs-link">API-Doku</a></nav>
+  </header>
+
+  <main>
+    <section class="search-section" aria-label="Stationssuche">
+      <div class="search-box">
+        <input id="search-input" type="search" placeholder="Station suchen — z. B. Westbahnhof, Reumannplatz…"
+               autocomplete="off" spellcheck="false" aria-label="Station suchen">
+        <ul id="search-results" class="search-results" hidden></ul>
+      </div>
+      <div class="quick-chips" id="quick-chips" aria-label="Beliebte Stationen"></div>
+    </section>
+
+    <section id="board-section" class="board-section" hidden aria-live="polite">
+      <div class="board-header">
+        <h2 id="board-station-name"></h2>
+        <div id="board-meta" class="board-meta"></div>
+      </div>
+      <div id="board-notice" class="notice" hidden></div>
+      <table class="board" aria-label="Nächste Abfahrten">
+        <thead>
+          <tr><th scope="col">Linie</th><th scope="col">Richtung</th><th scope="col">Status</th><th scope="col" class="col-countdown">Abfahrt</th></tr>
+        </thead>
+        <tbody id="board-body"></tbody>
+      </table>
+    </section>
+
+    <section id="stats-section" class="stats-section" hidden>
+      <h3>Pünktlichkeit — letzte 60 Minuten</h3>
+      <div id="stats-grid" class="stats-grid"></div>
+    </section>
+
+    <section id="disruptions-section" class="disruptions-section" hidden>
+      <h3>Aktuelle Störungen</h3>
+      <ul id="disruptions-list" class="disruptions-list"></ul>
+    </section>
+
+    <section id="empty-state" class="empty-state">
+      <p>Wähle eine Station, um die Live-Abfahrten zu sehen.</p>
+      <p class="muted">Jede Station in Wien funktioniert — gesuchte Stationen werden automatisch in die Live-Abfrage aufgenommen.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Datenquelle: Stadt Wien – <a href="https://data.wien.gv.at" rel="noopener">data.wien.gv.at</a> (Wiener Linien), CC BY 4.0.</p>
+  </footer>
+
+  <script src="/static/app.js?v=3"></script>
+</body>
+</html>

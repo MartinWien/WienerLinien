@@ -1,0 +1,170 @@
+{
+  "data": {
+    "monitors": [
+      {
+        "locationStop": {
+          "type": "Feature",
+          "geometry": { "type": "Point", "coordinates": [16.3689035, 48.2012488] },
+          "properties": {
+            "name": "60200657",
+            "title": "Karlsplatz",
+            "municipality": "Wien",
+            "municipalityId": 49000001,
+            "type": "stop",
+            "coordName": "WGS84",
+            "gate": "1",
+            "attributes": { "rbl": 4109 }
+          }
+        },
+        "lines": [
+          {
+            "name": "U1",
+            "towards": "Leopoldau",
+            "direction": "H",
+            "platform": "1",
+            "richtungsId": "1",
+            "barrierFree": true,
+            "realtimeSupported": true,
+            "trafficjam": false,
+            "departures": {
+              "departure": [
+                {
+                  "departureTime": {
+                    "timePlanned": "2026-07-11T23:12:00.000+0200",
+                    "timeReal": "2026-07-11T23:13:30.000+0200",
+                    "countdown": 1
+                  },
+                  "vehicle": {
+                    "name": "U1",
+                    "towards": "Leopoldau",
+                    "direction": "H",
+                    "platform": "1",
+                    "richtungsId": "1",
+                    "barrierFree": true,
+                    "foldingRamp": true,
+                    "cooling": true,
+                    "realtimeSupported": true,
+                    "trafficjam": false,
+                    "type": "ptMetro",
+                    "attributes": {},
+                    "linienId": 301
+                  }
+                },
+                {
+                  "departureTime": {
+                    "timePlanned": "2026-07-11T23:17:00.000+0200",
+                    "timeReal": "2026-07-11T23:16:24.000+0200",
+                    "countdown": 5
+                  },
+                  "vehicle": {
+                    "name": "U1",
+                    "towards": "Leopoldau",
+                    "direction": "H",
+                    "platform": "1",
+                    "richtungsId": "1",
+                    "barrierFree": true,
+                    "foldingRamp": true,
+                    "cooling": true,
+                    "realtimeSupported": true,
+                    "trafficjam": false,
+                    "type": "ptMetro",
+                    "attributes": {},
+                    "linienId": 301
+                  }
+                },
+                {
+                  "departureTime": {
+                    "timePlanned": "2026-07-11T23:22:00.000+0200",
+                    "countdown": 10
+                  }
+                }
+              ]
+            },
+            "type": "ptMetro",
+            "lineId": 301
+          }
+        ],
+        "attributes": {}
+      },
+      {
+        "locationStop": {
+          "type": "Feature",
+          "geometry": { "type": "Point", "coordinates": [16.3689933, 48.2012308] },
+          "properties": {
+            "name": "60200657",
+            "title": "Karlsplatz",
+            "municipality": "Wien",
+            "municipalityId": 49000001,
+            "type": "stop",
+            "coordName": "WGS84",
+            "gate": "2",
+            "attributes": { "rbl": 4120 }
+          }
+        },
+        "lines": [
+          {
+            "name": "U1",
+            "towards": "Alaudagasse",
+            "direction": "R",
+            "platform": "2",
+            "richtungsId": "2",
+            "barrierFree": true,
+            "realtimeSupported": true,
+            "trafficjam": false,
+            "departures": {
+              "departure": [
+                {
+                  "departureTime": {
+                    "timePlanned": "2026-07-11T23:14:00.000+0200",
+                    "timeReal": "2026-07-11T23:14:00.000+0200",
+                    "countdown": 3
+                  },
+                  "vehicle": {
+                    "name": "U1",
+                    "towards": "Alaudagasse",
+                    "direction": "R",
+                    "platform": "2",
+                    "richtungsId": "2",
+                    "barrierFree": true,
+                    "foldingRamp": true,
+                    "cooling": true,
+                    "realtimeSupported": true,
+                    "trafficjam": false,
+                    "type": "ptMetro",
+                    "attributes": {},
+                    "linienId": 301
+                  }
+                }
+              ]
+            },
+            "type": "ptMetro",
+            "lineId": 301
+          }
+        ],
+        "attributes": {}
+      }
+    ],
+    "trafficInfos": [
+      {
+        "refTrafficInfoCategoryId": 1,
+        "name": "stoerunglang",
+        "priority": "1",
+        "owner": "wl",
+        "title": "U4: Verzögerungen",
+        "description": "Wegen einer Signalstörung kommt es auf der Linie U4 zu Verzögerungen.",
+        "relatedLines": ["U4"],
+        "relatedStops": [4416, 4421],
+        "time": {
+          "start": "2026-07-11T21:40:00.000+0200",
+          "end": "2026-07-12T01:00:00.000+0200"
+        },
+        "attributes": {}
+      }
+    ]
+  },
+  "message": {
+    "value": "OK",
+    "messageCode": 1,
+    "serverTime": "2026-07-11T23:11:12.000+0200"
+  }
+}
