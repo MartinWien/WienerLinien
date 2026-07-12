@@ -10,5 +10,4 @@ __pycache__
 data/*.csv
 data/*.db
 tests
-README.md
 docker-compose.yml

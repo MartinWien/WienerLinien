@@ -1,0 +1,15 @@
+# Render blueprint: one always-running web service built from the Dockerfile.
+# The poller runs inside the same process, so a single instance is all this
+# app needs. SQLite + in-memory cache keep the free tier zero-config; the
+# departure history resets on restarts, which is fine for a demo deployment.
+services:
+  - type: web
+    name: wl-pulse
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: WL_CACHE_BACKEND
+        value: memory
+      - key: WL_LOG_JSON
+        value: "true"

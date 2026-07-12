@@ -82,6 +82,12 @@ The registry CSVs (~5 MB) are downloaded automatically on first start.
 All configuration is via `WL_`-prefixed environment variables with working defaults —
 see [.env.example](.env.example).
 
+**Deployment:** the app is one always-running container (the poller lives in the same
+process), so it needs a container platform — Render ([render.yaml](render.yaml) included),
+Railway or Fly.io. Serverless platforms like Vercel won't work: they freeze the process
+between requests, which kills the poller, and their read-only filesystem breaks the
+registry download.
+
 ## Development
 
 ```bash
