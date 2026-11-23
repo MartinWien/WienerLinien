@@ -33,7 +33,7 @@ class _Observation(NamedTuple):
 
 def _latest_observation_query(
     station_diva: int, since: datetime
-) -> Select[tuple[str, int | None, datetime]]:
+) -> Select[str, int | None, datetime]:
     """Select one row per unique departure: its last observation in the window."""
     snapshot = DepartureSnapshot
     last_seen = (
